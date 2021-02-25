@@ -33,7 +33,7 @@ def transliterate(data):
 
 
 def set_new_file(data):
-    with open("result.csv", 'w', newline='') as file:
+    with open("result.csv", 'w', newline='', encoding='utf-8') as file:
         file_writer = writer(file)
         file_writer.writerows(data)
 
